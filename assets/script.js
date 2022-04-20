@@ -20,8 +20,21 @@ const createRandomPassword = () => {
 
 // main function to generate the random password
 const generatePassword = () => {
+    // ask users the length of password
+    passwordLength = prompt("Choose how many characters long you'd like your password to be (Choose between 8 and 128)");
+    console.log("Password length " + passwordLength);
+
   // get the password length
   const passwordLength = getPasswordLength();
+  //   if number
+  if (Number.isNaN(passwordLength)) {
+    alert("Password length must be a number between 8-128 characters");
+    return false;
+    }else if(passwordLength <= 8 && passwordLength >= 128){
+        passwordLength
+     }
+
+
 
   // get the password criteria
   const passwordCriteria = getPasswordCriteria();
