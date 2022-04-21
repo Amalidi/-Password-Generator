@@ -1,4 +1,4 @@
-// Assignment Code
+//Assignment Code
 const generateBtn = document.querySelector("#generate");
 
 
@@ -35,13 +35,20 @@ const generatePassword = () => {
 
     // get the password length 
     const getPasswordLength = () => {
-        
+        const passwordlength = prompt("How many characters would you like your password? Choose between 8 and 128")
+        console.log(passwordlength);
+
+        const detPassLength = parseInt (passwordlength, 10);
+        console.log("detPassLength" + detPassLength);
+
+        if (detPassLength >=8 && detPassLength <= 128){
+            console.log("correct")
+        } else {
+            alert ("Password length must be a number between 8-128 characters");
+            return false;
+        }
+        return detPassLength;
       };
-
-
-
-
-
 
     
 
@@ -72,10 +79,14 @@ const generatePassword = () => {
 
     // create random password
 
+    
 
 
 
 
+
+   
+    
 
 
 
