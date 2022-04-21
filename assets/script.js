@@ -27,9 +27,39 @@ const generatePassword = () => {
         };
 
         }else{
-        alert("Reselect your choices again.")
+            // when user input is incorrect 
+        alert("Enter your password again.")
         }
         };
+
+
+    // get the password length 
+    const getPasswordLength = () => {
+        
+      };
+
+
+
+
+
+
+    
+
+    // get the password criteria
+    const getPasswordCriteria = () => {
+        const lowercaseCheck = ("Do you want to include lowercase letters in your password?");
+        const uppercaseCheck = ("Do you want to include uppercase letters in your password?");
+        const specialCheck   = ("Do you want to include special characters in your password?");
+        const numberCheck   = ("Do you want to include numbers in your password?");
+        
+      }
+
+    // create random password
+
+
+
+
+
 
 
 
@@ -71,19 +101,19 @@ generateBtn.addEventListener("click", writePassword);
 
 
 
-const getPasswordLength = () => {
-    return 10;
-  };
+// const getPasswordLength = () => {
+//     return 10;
+//   };
   
-  const getPasswordCriteria = () => {
-    return [
-      "abcdefghijklmnopqrstuvwxyz",
-      "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-      "0123456789",
-      " !\"#$%&'()*+,-./:;<=>?@[]^_`{|}~",
-    ];
-  };
+//   const getPasswordCriteria = () => {
+//     return [
+//       "abcdefghijklmnopqrstuvwxyz",
+//       "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+//       "0123456789",
+//       " !\"#$%&'()*+,-./:;<=>?@[]^_`{|}~",
+//     ];
+//   };
 
-  const createRandomPassword = () => {
-    return "kdUE28(@d0";
-  };
+//   const createRandomPassword = () => {
+//     return "kdUE28(@d0";
+//   };
