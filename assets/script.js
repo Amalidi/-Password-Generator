@@ -47,12 +47,28 @@ const generatePassword = () => {
 
     // get the password criteria
     const getPasswordCriteria = () => {
-        const lowercaseCheck = ("Do you want to include lowercase letters in your password?");
-        const uppercaseCheck = ("Do you want to include uppercase letters in your password?");
-        const specialCheck   = ("Do you want to include special characters in your password?");
-        const numberCheck   = ("Do you want to include numbers in your password?");
-        
-      }
+        const lowercaseCheck = confirm ("Do you want to include lowercase letters in your password?");
+        const uppercaseCheck = confirm ("Do you want to include uppercase letters in your password?");
+        const specialCheck   = confirm ("Do you want to include special characters in your password?");
+        const numberCheck    = confirm ("Do you want to include numbers in your password?");
+        const determinePassword = [];
+
+        if(lowercaseCheck){
+            determinePassword.push("abcdefghijklmnopqrstuvwxyz");
+        }
+        if(uppercaseCheck){
+            determinePassword.push("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+        }
+        if(specialCheck){
+            determinePassword.push(" !\"#$%&'()*+,-./:;<=>?@[]^_`{|}~");
+        }
+        if(numberCheck){
+            determinePassword.push("0123456789");
+        }
+
+        return determinePassword;
+
+      };
 
     // create random password
 
