@@ -8,7 +8,7 @@ The Password generator tool creates a random and customized password for users t
 
 # Project prerequisites:
 
-. The user is presented with a series of prompts for password criteria
+       . The user is presented with a series of prompts for password criteria
 
 . The user is prompted to choose a password length between 8 - 12 characters.
 
@@ -26,7 +26,8 @@ The user will recieve a confirm for:
 
 # Links to URL & GitHub Repo
 
-Link to the Github Repository:[https://github.com/Amalidi/-Password-Generator]()
+Link to the Github Repository (dev branch):[https://github.com/Amalidi/-Password-Generator]()
+
 Link to the deployed URL:
 
 # Screenshot of the App
