@@ -54,10 +54,10 @@ const generatePassword = () => {
 
     // get the password criteria
     const getPasswordCriteria = () => {
-        const lowercaseCheck = confirm ("Do you want to include lowercase letters in your password?");
-        const uppercaseCheck = confirm ("Do you want to include uppercase letters in your password?");
-        const specialCheck   = confirm ("Do you want to include special characters in your password?");
-        const numberCheck    = confirm ("Do you want to include numbers in your password?");
+        const lowercaseCheck = confirm ("Do you want to include lowercase letters in your password? Click 'ok' for yes and 'cancel' for no");
+        const uppercaseCheck = confirm ("Do you want to include uppercase letters in your password? Click 'ok' for yes and 'cancel' for no");
+        const specialCheck   = confirm ("Do you want to include special characters in your password? Click 'ok' for yes and 'cancel' for no");
+        const numberCheck    = confirm ("Do you want to include numbers in your password? Click 'ok' for yes and 'cancel' for no");
         const determinePassword = [];
 
         if(lowercaseCheck){
