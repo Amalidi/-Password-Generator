@@ -9,12 +9,19 @@ The Password generator tool creates a random and customized password for users t
 # Project prerequisites:
 
 . The user is presented with a series of prompts for password criteria
+
 . The user is prompted to choose a password length between 8 - 12 characters.
+
 . If the condition for the prompt codintion are not met the user is alerted to retry again.
+
 The user will recieve a confirm for:
+
 . Password containing lowercase, uppercase, numeric, and special characters
+
 . This will need to randomly generate a selection or randomly select array data, so math.random and math.floor will need to be used.
+
 . Once all prompts are answered, the user will be presented with a password matching the answered prompts.
+
 . Event listener will determine the password output with function to populate the value into the text area.
 
 # Links to URL & GitHub Repo
@@ -24,4 +31,4 @@ Link to the deployed URL:
 
 # Screenshot of the App
 
-![Image of the project](/assets/Images/Project%20image.png)
+![Image of the project](./assets/Images/Project%20image.png)
