@@ -89,11 +89,10 @@ const generatePassword = () => {
         const randomIndex = Math.floor(Math.random() * randomCategory.length);
         // getting random character
         const randomCharacter = randomCategory.charAt(randomIndex)
-        passwordArray.push(randomCategory);
+        passwordArray.push(randomCharacter);
         }
         return passwordArray.join("");
     };
-
     
 
 // Write password to the #password input
