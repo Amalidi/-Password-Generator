@@ -33,5 +33,3 @@ Link to the deployed URL: [https://amalidi.github.io/-Password-Generator/]()
 # Screenshot of the App
 
 ![Image of the project](./assets/Images/Project%20image.png)
-
- <summary>![Image of the project](./assets/Images/Project%20image.png)</summary>
