@@ -28,7 +28,7 @@ The user will recieve a confirm for:
 
 Link to the Github Repository (dev branch):[https://github.com/Amalidi/-Password-Generator]()
 
-Link to the deployed URL: ([https://amalidi.github.io/-Password-Generator/])
+Link to the deployed URL: [https://amalidi.github.io/-Password-Generator/]
 
 # Screenshot of the App
 
