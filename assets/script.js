@@ -35,7 +35,7 @@ const generatePassword = () => {
 
     // get the password length 
     const getPasswordLength = () => {
-        const passwordlength = prompt("How many characters would you like your password? Choose between 8 and 128")
+        const passwordlength = prompt("Choose how many characters long you'd like your password to be? Choose between 8 and 128")
         console.log(passwordlength);
 
         const detPassLength = parseInt (passwordlength, 10);
@@ -78,40 +78,23 @@ const generatePassword = () => {
       };
 
     // create random password
+    const createRandomPassword = (passwordLength, passwordCriteria) => {
+        const passwordArray =[];
+        for(let i = 0; i < passwordLength; i+=1){
+        // select random categories from the array
+        const randomCategoryIndex = Math.floor(Math.random() * passwordCriteria.length);
+        // getting random categories 
+        const randomCategory = passwordCriteria[randomCategoryIndex];
+        // getting random index
+        const randomIndex = Math.floor(Math.random() * randomCategory.length);
+        // getting random character
+        const randomCharacter = randomCategory.charAt(randomIndex)
+        passwordArray.push(randomCategory);
+        }
+        return passwordArray.join("");
+    };
 
     
-
-
-
-
-
-   
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Write password to the #password input
 const writePassword = () => {
@@ -123,24 +106,3 @@ const writePassword = () => {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-
-
-
-
-// const getPasswordLength = () => {
-//     return 10;
-//   };
-  
-//   const getPasswordCriteria = () => {
-//     return [
-//       "abcdefghijklmnopqrstuvwxyz",
-//       "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-//       "0123456789",
-//       " !\"#$%&'()*+,-./:;<=>?@[]^_`{|}~",
-//     ];
-//   };
-
-//   const createRandomPassword = () => {
-//     return "kdUE28(@d0";
-//   };
