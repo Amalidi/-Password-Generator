@@ -8,14 +8,14 @@ const generatePassword = () => {
 
     // get the password length
   const passwordLength = getPasswordLength();
-  console.log("passwordlength" + passwordLength);
+//   console.log("passwordlength" + passwordLength);
 
  if(passwordLength) {
   // get the password criteria
     const passwordCriteria = getPasswordCriteria();
 
     if(passwordCriteria.length === 0){
-        alert("Password length must be a number between 8-128 characters")
+        alert("Please select at least one character")
     }  
       if(Number.isNaN(passwordLength)) {
         alert("Password length should be a number");
@@ -35,14 +35,12 @@ const generatePassword = () => {
 
     // get the password length 
     const getPasswordLength = () => {
-        const passwordlength = prompt("Choose how many characters long you'd like your password to be? Choose between 8 and 128")
-        console.log(passwordlength);
+        const passwordLength = prompt("Choose how many characters long you'd like your password to be? Choose between 8 and 128")
 
-        const detPassLength = parseInt (passwordlength, 10);
-        console.log("detPassLength" + detPassLength);
+        const detPassLength = parseInt (passwordLength, 10);
 
         if (detPassLength >=8 && detPassLength <= 128){
-            console.log("correct")
+
         } else {
             alert ("Password length must be a number between 8-128 characters");
             return false;
@@ -72,7 +70,6 @@ const generatePassword = () => {
         if(numberCheck){
             determinePassword.push("0123456789");
         }
-
         return determinePassword;
 
       };
